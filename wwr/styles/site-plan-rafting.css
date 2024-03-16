@@ -7,7 +7,7 @@
     --accent1-color: #C3EEAA;
     --accent2-color: #F1B26A;
 
-    --heading-font: "Oswald" sans-serif;
+    --heading-font: "Oswald", sans-serif;
     --paragraph-font: "Roboto Serif", serif;
 
     /* referencing variables to maintain css readability for anchor tag rules */
