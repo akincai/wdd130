@@ -1,8 +1,8 @@
 @import url("https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&family=Roboto+Serif:ital,opsz,wght@0,8..144,100..900;1,8..144,100..900&display=swap");
 
 :root {
-    --primary-color: #537a5a;
-    --secondary-color: #8b635c;
+    --primary-color: #3e5b43;
+    --secondary-color: #5c423d;
     --accent1-color: #c3eeaa;
     --accent2-color: #f1b26a;
 
@@ -17,8 +17,129 @@
 }
 
 body {
-    background-color: var(--accent1-color);
     max-width: 1200px;
+}
+
+header {
+    background-color: var(--accent1-color);
+    margin-bottom: 20px;
+    padding: 10px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    align-items: center;
+}
+
+header > img {
+    grid-column: 2/3;
+}
+
+header > nav {
+    grid-column: 3/5;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+header > nav a {
+    display: block;
+    color: var(--nav-link-color);
+    text-decoration: none;
+    padding: 1rem;
+}
+
+header > nav a:link, header > nav a:visited {
+    color: var(--nav-link-color);
+}
+
+header > nav a:hover {
+    color: var(--nav-hover-link-color);
+    background-color: var(--nav-hover-background-color);
+}
+
+.flex-history {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.flex-history p {
+    text-align: center;
+}
+
+
+.grid-adventure {
+    display: grid;
+    grid-template-areas:
+    "header header header header header"
+    "raft1 raft2 raft3 raft4 raft5";
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: 1fr 2fr;
+    justify-content: center;
+    align-items: center;
+}
+
+.grid-adventure h2 {
+    grid-area: header;
+    text-align: center;
+}
+
+.grid-adventure img {
+    width: 100%;
+    min-width: 100px;
+    height: 100px;
+    grid-area: image;
+}
+
+/* selectors for each image in the gallery */
+.grid-adventure figure:nth-of-type(1) {
+    grid-area: raft1;
+}
+.grid-adventure figure:nth-of-type(2) {
+    grid-area: raft2;
+}
+.grid-adventure figure:nth-of-type(3) {
+    grid-area: raft3;
+}
+.grid-adventure figure:nth-of-type(4) {
+    grid-area: raft4;
+}
+.grid-adventure figure:nth-of-type(5) {
+    grid-area: raft5;
+}
+
+.grid-adventure figcaption {
+    background-color: rgba(0, 0, 0, .6);
+    color: white;
+    text-align: center;
+}
+
+footer {
+    display: grid;
+    min-height: 100px;
+    grid-template-columns: 75% 1fr;
+    background-color: var(--accent1-color);
+    padding: 10px;
+    align-items: center;
+}
+
+footer p {
+    text-align: center;
+    grid-column: 1/3;
+    grid-row: 1/2;
+}
+.sociallinks {
+    grid-column: 2/3;
+    grid-row: 1/2;
+    justify-self: end;
+}
+
+.sociallinks img {
+    width: 50px;
+    margin-right: 5px;
+}
+
+.sociallinks a {
+    text-decoration: none;
 }
 
 h1,
@@ -36,8 +157,12 @@ p {
     color: var(--secondary-color);
 }
 
-.sociallinks a {
-    text-decoration: none;
+.hero h1 {
+    color: var(--accent1-color);
+}
+
+.hero p {
+    color: aliceblue;
 }
 
 .hero {
@@ -48,6 +173,7 @@ p {
     display: block;
     width: 100%;
     height: auto;
+    min-height: 300px;
 }
 
 .hero h1 {
@@ -66,6 +192,7 @@ p {
     top: 100px;
     margin: 0 200px;
     padding: 20px;
+    max-height: 400px;
 }
 
 article img {
@@ -73,9 +200,3 @@ article img {
     float: right;
     margin-left: 10px;
 }
-
-.sociallinks img {
-    width: 50px;
-    margin-right: 5px;
-}
-
