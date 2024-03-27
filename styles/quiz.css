@@ -13,14 +13,10 @@ body {
     background: #fff;
 }
 
-header {
-    margin: 15px auto;
-    width: 650px;
-}
-
 h1 {
+    margin: 15px auto;
     margin: 1rem;
-    font-size: 1.5em;
+    font-size: 1.2em;
     color: navy;
     text-align: center;
 }
