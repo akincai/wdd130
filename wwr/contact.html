@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en-US">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
+        <title>Contact Us | Andrew Kincaid</title>
+        <meta name="description"
+            content="This about page explains ways for users to get in contact with our rafting company.">
+        <meta name="author" content="Andrew Kincaid">
+        <link rel="stylesheet" href="styles/rafting.css">
+    </head>
+    <body>
+        <header>
+            <!--Logo-->
+            <img src="images/logo.png" alt="Rafting Site Logo">
+
+            <!--Navigation-->
+            <nav>
+                <a href="index.html">Home Page</a>
+                <a href="about.html">About</a>
+                <a href="trips.html">Trips</a>
+                <a href="contact.html">Contact Us</a>
+            </nav>
+        </header>
+        <main>
+            <section class="information">
+                <h1>Get in Contact</h1>
+                <div class="flex-info">
+                    <div>
+                        <h2>Address</h2>
+                        <p>123 Road Street<br>Townsville, OR</p>
+                    </div>
+                    <div>
+                        <h2>Phone</h2>
+                        <p>&#40;234&#41;123-4567</p>
+                    </div>
+                    <div>
+                        <h2>Email</h2>
+                        <p>address@hotmail.com</p>
+                    </div>
+                    <div>
+                        <!-- map embed -->
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d895379.751111418!2d-120.23246915347752!3d44.26114667121652!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sus!4v1711707857926!5m2!1sen!2sus"
+                            loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+                </div>
+            </section>
+            <section class="staff">
+                <h1>Our Staff</h1>
+                <figure>
+                    <img src="images/employee.png" alt="An employee raising his hands with joy">
+                    <figcaption>Marketing Head</figcaption>
+                </figure>
+                <figure>
+                    <img src="images/employee-2.jpg" alt="An employee talking on the phone">
+                    <figcaption>Customer Relations</figcaption>
+                </figure>
+                <figure>
+                    <img src="images/employee-3.jpg" alt="An employee paddling a one-man raft">
+                    <figcaption>Head of Guiding</figcaption>
+                </figure>
+            </section>
+            <div class="flex-form">
+                <form>
+                    <fieldset>
+                        <legend>Contact Us</legend>
+                        <div class="form-item">
+                            <label for="fullname">Name:</label>
+                            <input type="text" id="fullname" name="fullname">
+                        </div>
+                        <div class="form-item">
+                            <label for="useremail">Email:</label>
+                            <input type="email" id="useremail" name="useremail">
+                        </div>
+                        <div class="form-item">
+                            <input type="radio" id="gen-inq" name="message-type" value="GeneralInquiry">
+                            <label for="gen-inq">General Inquiry</label>
+                            <input type="radio" id="res-que" name="message-type" value="ReservationQuestion">
+                            <label for="res-que">Reservation Question</label>
+                            <input type="radio" id="web-sug" name="message-type" value="WebsiteSuggestion">
+                            <label for="web-sug">Website Suggestion</label>
+                        </div>
+                        <div class="form-item">
+                            <textarea name="message" id="message" cols="60" rows="5"></textarea>
+                        </div>
+                        <div class="form-item">
+                            <input type="checkbox" id="newsletter" name="newsletter">
+                            <label for="newsletter">Please subscribe me to the monthly newsletter</label>
+                        </div>
+                    </fieldset>
+                    <button type="button">Send Feedback</button>
+                </form>
+            </div>
+        </main>
+        <footer>
+            <p>©️2024 | Rafting Company Name | Andrew Kincaid</p>
+            
+            <a href="images/contact-us-wireframe.png">Wireframe</a>
+
+            <nav class="sociallinks">
+                <a href="https://facebook.com">
+                    <img src="images/facebook.png" alt="Facebook">
+                </a>
+                <a href="https://twitter.com">
+                    <img src="images/twitter.png" alt="X">
+                </a>
+                <a href="https://instagram.com">
+                    <img src="images/instagram.png" alt="Instagram">
+                </a>
+            </nav>
+        </footer>
+    </body>
+</html>
