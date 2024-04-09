@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en-US">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
+        <title>Home Page | Andrew Kincaid</title>
+        <meta name="description"
+            content="This page functions as the home page for the rafting company website">
+        <meta name="author" content="Andrew Kincaid">
+        <link rel="stylesheet" href="styles/rafting.css">
+    </head>
+    <body>
+        <header>
+            <!--Logo-->
+            <img src="images/logo.png" alt="Rafting Site Logo">
+
+            <!--Navigation-->
+            <nav>
+                <a href="index.html">Home Page</a>
+                <a href="about.html">About</a>
+                <a href="trips.html">Trips</a>
+                <a href="contact.html">Contact Us</a>
+            </nav>
+        </header>
+
+        <main class="grid-content">
+            <div class="hero">
+                <img class="home-img" src="images/rafting-4.jpg" alt="Back view of rafters">
+                <h1 class="hero-text">WELCOME TO OUR HOMEPAGE!</h1>
+            </div>
+
+            <div class="flex-form home">
+                <form>
+                    <fieldset>
+                        <legend>Get Our Newsletter</legend>
+                        <div class="form-item">
+                            <label for="fullname">Name:</label>
+                            <input type="text" id="fullname" name="fullname">
+                        </div>
+                        <div class="form-item">
+                            <label for="useremail">Email:</label>
+                            <input type="email" id="useremail" name="useremail">
+                        </div>
+                    </fieldset>
+                    <button type="submit">Sign Me Up!</button>
+                </form>
+            </div>
+
+            <section class="trip-prompt">
+                <a href="trips.html">
+                    <h1>Book a Trip Today</h1>
+                    <img src="images/rafting-1.jpg" alt="Rafters in a white boat">
+                </a>
+            </section>
+
+            <section class="grid-services">
+                <div>
+                    <h2>Rent Our Overnight Cabin</h2>
+                    <img src="images/river-cabin.jpg" alt="Cabin on the bank of a river">
+                </div>
+                <div>
+                    <h2>Learn To Paddleboard</h2>
+                    <img src="images/paddle-boards.jpg" alt="Standup paddle boards on still water">
+                </div>
+            </section>
+
+        </main>
+
+        <footer>
+            <p>©️2024 | Rafting Company Name | Andrew Kincaid</p>
+            
+            <!-- TODO: ADD WIREFRAME IMAGE -->
+            <a href="images/home-page-wireframe.png">Wireframe</a>
+
+            <nav class="sociallinks">
+                <a href="https://facebook.com">
+                    <img src="images/facebook.png" alt="Facebook">
+                </a>
+                <a href="https://twitter.com">
+                    <img src="images/twitter.png" alt="X">
+                </a>
+                <a href="https://instagram.com">
+                    <img src="images/instagram.png" alt="Instagram">
+                </a>
+            </nav>
+        </footer>
+    </body>
+</html>

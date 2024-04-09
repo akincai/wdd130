@@ -59,6 +59,16 @@ header > nav a:hover {
     background-color: var(--nav-hover-background-color);
 }
 
+.grid-content {
+    display: grid;
+    max-width: 1200px;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: 
+    "hero hero"
+    "news-form trips"
+    "services services";
+}
+
 .flex-history {
     display: flex;
     flex-flow: row wrap;
@@ -172,6 +182,11 @@ p {
 
 .hero {
     position: relative;
+    grid-area: hero;
+}
+
+.home-img {
+    max-height: 300px;
 }
 
 .hero > img {
@@ -278,6 +293,50 @@ form {
 .flex-form {
     display: flex;
     justify-content: center;
+    grid-area: news-form;
+}
+
+.home {
+    max-width: 560px;
+    justify-self: center;
+}
+.home button {
+    font-size: 28px;
+}
+
+.trip-prompt {
+    position: relative;
+    font-size: 32px;
+    text-align: center;
+    margin-top: 15px;
+}
+.trip-prompt h1 {
+    color: var(--accent1-color);
+    position: absolute;
+    background-color: rgba(0, 0, 0, .6);
+    top: 10px;
+    left: 0;
+    right: 0;
+}
+
+.grid-services {
+    display: grid;
+    grid-area: services;
+    grid-template-columns: 1fr 1fr;
+    justify-items: center;
+}
+.grid-services div {
+    background-color: #ddd;
+    border: 5px solid var(--accent2-color);
+    border-radius: 15px;
+    padding: 0 15px 15px;
+}
+.grid-services h2 {
+    text-align: center;
+}
+.grid-services img {
+    width: 500px;
+    height: 300px;
 }
 
 
